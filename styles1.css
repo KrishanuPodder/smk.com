@@ -1,0 +1,80 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background: #fffaf0; /* Light cream background */
+}
+
+header {
+    background: #ff8c00; /* Dark orange */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a.active {
+    text-decoration: underline;
+}
+
+.principal-photo {
+    width: 200px;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+}
+
+.school-info, .principal-message {
+    padding: 20px;
+    background: #fff; /* White background for content sections */
+    margin: 20px;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #ff8c00; /* Dark orange */
+    color: white;
+}
+
+.larger-button {
+    font-size: 18px; /* Adjust the font size as needed */
+    padding: 15px 25px; /* Adjust the padding as needed */
+}
+
+.academic-image {
+    width: 100%;  /* Full width of the section container */
+    max-width: 600px;  /* Limits the size to be not too large */
+    height: auto;  /* Maintains aspect ratio */
+    display: block;  /* Ensures it does not inline with text */
+    margin: 10px auto;  /* Centers the image and adds space around it */
+}
+
+@media (max-width: 768px) {
+    .principal-photo {
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-right: 0;
+    }
+}

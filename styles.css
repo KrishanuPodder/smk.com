@@ -1,0 +1,76 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background: #6DF806; /* Light cream background */
+}
+
+header {
+    background: #ff8c00; /* Dark orange */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background: #0606F8; /* Orange */
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.image-slider {
+    width: 100%;
+    overflow: hidden;
+    background: #0606F8; /* Background color for the slider */
+}
+
+.image-slide {
+    display: flex;
+    width: calc(100% * 3); /* for 3 images */
+    animation: scrollImages 30s linear infinite; /* Adjust time as necessary */
+}
+
+.image-slide img {
+    max-height: 200px; /* Set a max-height that works for your design */
+    object-fit: contain; /* Ensures the entire image is shown */
+    width: auto; /* Width is automatically adjusted */
+    flex-shrink: 0;
+    display: block; /* ensures there's no space between inline-level elements */
+    margin: auto; /* This will center the image in the allocated flex space */
+}
+
+@keyframes scrollImages {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-50%)); } /* Move 3 times the width to the left */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #ff8c00; /* lime */
+    color: white;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-right: 0;
+    }
+}
